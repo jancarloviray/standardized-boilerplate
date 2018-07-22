@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Button from '@material/react-button';
-// import { Button } from 'reactstrap';
-import logo from './logo.svg';
-import styled from 'styled-components'
-import './App.css';
 import { inject, observer } from 'mobx-react';
+import styled from 'styled-components'
+import { Alert, Button } from 'reactstrap';
+import Card from '@material/react-card';
+import logo from './logo.svg';
+import './App.css';
 
 const AppWrapper = styled.div`
   text-align: center;
@@ -17,9 +17,14 @@ const App = () => (
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="App-title">Welcome to React</h1>
-        {/* <Button>Hello</Button> */}
-        <Button>Hello</Button>
       </header>
+      <div>
+        <Alert color="primary">This is a primary alert from Reactstrap and <Button color="primary">Bootstrap</Button></Alert>
+        <Card>
+          <h1>Title</h1>
+          <p>Content</p>
+        </Card>
+      </div>
       <ul>
         <li>
           <Link to="/">Home</Link>
