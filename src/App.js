@@ -3,39 +3,100 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { inject, observer } from 'mobx-react';
 import styled from 'styled-components'
 import { Alert, Button } from 'reactstrap';
-import Card from '@material/react-card';
-import logo from './logo.svg';
+import Card, { CardPrimaryContent, CardActions, CardActionButtons, CardActionIcons } from '@material/react-card';
 import './App.css';
 
 const AppWrapper = styled.div`
   text-align: center;
+  position: relative;
+  width: 100%;
 `
+
+const AppHeader = styled.div`
+  background-color: #2B6BA1;
+  position: absolute;
+  z-index: 1000;
+  height: 70px;
+  color: white;
+  padding: 20px;
+  width: 100%;
+`
+
+const AppSidebar = styled.div`
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  background: white;
+  z-index: 1;
+  left: 0;
+  top: 0;
+`
+
+const AppContent = styled.div`
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding-left: 300px;
+  background: #E9ECEF;
+  padding-top: 70px;
+`
+
+const SectionHeader = styled.div`
+  padding: 25px;
+  text-align: right;
+`;
 
 const App = () => (
   <Router>
     <AppWrapper>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <AppHeader>
         <h1 className="App-title">Welcome to React</h1>
-      </header>
-      <div>
-        <Alert color="primary">This is a primary alert from Reactstrap and <Button color="primary">Bootstrap</Button></Alert>
-        <Card>
-          <h1>Title</h1>
-          <p>Content</p>
-        </Card>
-      </div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/topics">Topics</Link>
-        </li>
-      </ul>
-      <hr />
-      <Route exact path="/" component={Home} />
-      <Route path="/topics" component={Topics} />
+      </AppHeader>
+      <AppSidebar>
+      </AppSidebar>
+      <AppContent>
+        <SectionHeader>
+          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>Action 1</Button>
+          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>Action 2</Button>
+          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>Action 3</Button>
+        </SectionHeader>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col">
+              <Card>
+                <CardPrimaryContent>
+                  <p>Content</p>
+                </CardPrimaryContent>
+                <CardActions>
+                  <CardActionButtons>
+                    <Button color="primary" onClick={() => { }}>Action 1</Button>
+                    <Button color="primary" onClick={() => { }}>Action 2</Button>
+                    <Button color="primary" onClick={() => { }}>Action 2</Button>
+                  </CardActionButtons>
+                  <CardActionIcons></CardActionIcons>
+                </CardActions>
+              </Card>
+            </div>
+            <div className="col">
+            </div>
+            <div className="col">
+            </div>
+            <div className="col">
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/topics">Topics</Link>
+          </li>
+        </ul>
+        <hr />
+        <Route exact path="/" component={Home} />
+        <Route path="/topics" component={Topics} />
+      </AppContent>
     </AppWrapper>
   </Router>
 );
