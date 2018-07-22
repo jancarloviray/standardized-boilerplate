@@ -5,6 +5,7 @@ import Button from '@material/react-button';
 import logo from './logo.svg';
 import styled from 'styled-components'
 import './App.css';
+import { inject, observer } from 'mobx-react';
 
 const AppWrapper = styled.div`
   text-align: center;
@@ -34,10 +35,13 @@ const App = () => (
   </Router>
 );
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
+const Home = inject(['store'])(
+  observer(({ store }) => (
+    <div>
+      <h2>Home</h2>
+      <p>{store.text}</p>
+    </div>
+  ))
 );
 
 const Topics = ({ match }) => (
