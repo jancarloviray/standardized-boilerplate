@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-wrap1-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M25.6720257,40.6559486 L25.6720257,44 L31.4812433,44 L31.4812433,40.6559486 L25.6720257,40.6559486 Z M16.4973205,40.6559486 L16.4973205,44 L22.3279743,44 L22.3279743,40.6559486 L16.4973205,40.6559486 Z M7.34405145,34.8252947 L4,34.8252947 L4,44 L13.153269,44 L13.153269,40.6559486 L7.34405145,40.6559486 L7.34405145,34.8252947 Z M7.34405145,25.6720257 L4,25.6720257 L4,31.4812433 L7.34405145,31.4812433 L7.34405145,25.6720257 Z M4,22.3279743 L7.34405145,22.3279743 L7.34405145,16.4973205 L4,16.4973205 L4,22.3279743 Z M13.153269,7.34405145 L13.153269,4 L4,4 L4,13.153269 L7.34405145,13.153269 L7.34405145,7.34405145 L13.153269,7.34405145 Z M22.3279743,7.34405145 L22.3279743,4 L16.4973205,4 L16.4973205,7.34405145 L22.3279743,7.34405145 Z M31.4812433,7.34405145 L31.4812433,4 L25.6720257,4 L25.6720257,7.34405145 L31.4812433,7.34405145 Z M44,34.8252947 L40.6559486,34.8252947 L40.6559486,40.6559486 L34.8252947,40.6559486 L34.8252947,44 L44,44 L44,34.8252947 Z M44,25.6720257 L40.6559486,25.6720257 L40.6559486,31.4812433 L44,31.4812433 L44,25.6720257 Z M40.6559486,13.153269 L44,13.153269 L44,4 L34.8252947,4 L34.8252947,7.34405145 L40.6559486,7.34405145 L40.6559486,13.153269 Z M40.6559486,16.4973205 L40.6559486,22.3279743 L44,22.3279743 L44,16.4973205 L40.6559486,16.4973205 Z" id="path-1"></path>
+    </defs>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-1198.000000, -639.000000)">
+            <g id="Group-4" transform="translate(1176.000000, 282.000000)">
+                <g id="White" transform="translate(0.000000, 65.000000)">
+                    <g id="Icon-/-Wrap-1" transform="translate(18.000000, 288.000000)">
+                        <rect id="Container" fill-rule="nonzero" x="0" y="0" width="48" height="48"></rect>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Style-/-Color-/-White" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                            <rect id="Container" x="0" y="0" width="48" height="48"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

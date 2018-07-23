@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="40px" viewBox="0 0 32 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-file-download-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="48" height="48"></rect>
+        <path d="M8,40 L40,40 L40,44 L8,44 L8,40 Z M38.310354,19.567307 L24.71011,33.2838193 C24.3212514,33.6760022 23.6880922,33.6786971 23.2959093,33.2898385 L23.28989,33.2838193 L9.68964599,19.567307 C9.30078741,19.1751241 9.30348232,18.5419648 9.69566525,18.1531063 C9.88295102,17.967408 10.1360141,17.8632163 10.399756,17.8632163 L17.1271478,17.8632163 L17.1271478,4 L30.8728522,4 L30.8728522,17.8632163 L37.600244,17.8632163 C38.1525288,17.8632163 38.600244,18.3109315 38.600244,18.8632163 C38.600244,19.1269582 38.4960522,19.3800212 38.310354,19.567307 Z" id="path-3"></path>
+    </defs>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-1202.000000, -455.000000)">
+            <g id="Group-4" transform="translate(1176.000000, 282.000000)">
+                <g id="White" transform="translate(0.000000, 65.000000)">
+                    <g id="Icon-/-File-/-Download" transform="translate(18.000000, 104.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Container" fill-rule="nonzero"></g>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Download"></g>
+                        <g id="Style-/-Color-/-White" mask="url(#mask-4)" fill="#FFFFFF" fill-rule="evenodd">
+                            <rect id="Container" x="0" y="0" width="48" height="48"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

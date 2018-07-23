@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="40px" viewBox="0 0 26 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-MobileDevice-Alt-blueblack</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="48" height="48"></rect>
+        <path d="M12,40.4685373 L12,7.5314627 C12,5.582193 13.5823408,4 15.5294267,4 L34.3529262,4 C36.3019376,4 37.8823529,5.58258908 37.8823529,7.5314627 L37.8823529,40.4685373 C37.8823529,42.417807 36.3000121,44 34.3529262,44 L15.5294267,44 C13.5804153,44 12,42.4174109 12,40.4685373 Z M36,12 L14,12 L14,32 L36,32 L36,12 Z M35.9951242,34 L14.0115043,34 L14.0115043,40.4685373 C14.0115043,41.1186408 14.5391965,41.6470589 15.1879899,41.6470589 L34.8186385,41.6470589 C35.4662802,41.6470589 35.9951242,41.1182643 35.9951242,40.4685373 L35.9951242,34 Z M35.5294118,7.5314627 C35.5294118,6.88135917 35.0017196,6.35294108 34.3529262,6.35294108 L15.5294267,6.35294108 C14.8817851,6.35294108 14.3529411,6.88173569 14.3529411,7.5314627 L14.3529411,9.88235296 L35.5294118,9.88235296 L35.5294118,7.5314627 Z M25,40 C23.8954305,40 23,39.1045695 23,38 C23,36.8954305 23.8954305,36 25,36 C26.1045695,36 27,36.8954305 27,38 C27,39.1045695 26.1045695,40 25,40 Z" id="path-3"></path>
+    </defs>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-457.000000, -1917.000000)">
+            <g id="Group-5" transform="translate(80.000000, 1055.000000)">
+                <g id="Row" transform="translate(1.000000, 858.000000)">
+                    <g id="Icon-/-Mobile-Device-(Alt)" transform="translate(364.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Container" fill-rule="nonzero"></g>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-3"></use>
+                        <g id="Style-/-Color-/-Blue-Black" mask="url(#mask-4)" fill="#000015" fill-rule="evenodd">
+                            <rect id="Container" x="0" y="0" width="48" height="48"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

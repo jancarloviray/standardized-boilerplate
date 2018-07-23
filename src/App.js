@@ -16,31 +16,76 @@ const AppWrapper = styled.div`
 
 const AppHeader = styled.div`
   background-color: #2B6BA1;
+  background-image: url('/images/texture-brandadmin@2x.png');
+  background-size: cover;
+  background-origin: border-box;
   position: absolute;
   z-index: 1000;
   height: 70px;
   color: white;
   padding: 20px;
   width: 100%;
-`
-
-const AppSidebar = styled.div`
-  width: 300px;
-  height: 100vh;
-  position: absolute;
-  background: white;
-  z-index: 1;
-  left: 0;
-  top: 0;
+  text-align: left;
 `
 
 const AppContent = styled.div`
   position: relative;
   height: 100vh;
   width: 100%;
-  padding-left: 300px;
-  background: #E9ECEF;
+  padding-left: 270px;
+  background-color: #E9ECEF;
+  background-image: url('/images/texture-main.png');
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-origin: border-box;
   padding-top: 70px;
+`
+
+const AppSidebar = styled.div`
+  width: 270px;
+  height: 100vh;
+  position: absolute;
+  background: white;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  box-shadow: 1px 10px 2px #CCC;
+  padding-top: 90px;
+`
+
+const SidebarLogo = styled.div`
+  background: #f1f1f1;
+  height: 110px;
+  width: 85%;
+  margin: auto;
+`
+const SidebarTitle = styled.div`
+  text-align: left;
+  text-indent: 20px;
+  margin: 20px 0 90px 0;
+`
+const SidebarMenu = styled.div`
+  text-align: left;
+  margin: 0 0 0 15px;
+`
+const SidebarMenuItem = styled.div`
+  img {
+    margin: 0 15px;
+    height: 25px;
+  }
+  a { 
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+`
+
+const HeaderIconContainer = styled.div`
+  width: 15px;
+  margin: 0 10px 0 0;
+  margin-top: -5px;
+  display: inline-block;
+  img { width: 100%; }
 `
 
 const SectionHeader = styled.div`
@@ -48,19 +93,59 @@ const SectionHeader = styled.div`
   text-align: right;
 `;
 
+const LogoContainer = styled.div`
+  display: inline-block;
+  height: 25px;
+  img { height: 100%;}
+`
+
+const Breadcrumb = styled.div`
+  float: left;
+`
+
 const App = () => (
   <Router>
     <AppWrapper>
       <AppHeader>
-        <h1 className="App-title">Welcome to React</h1>
+        <h1 className="App-title">
+          <LogoContainer>
+            <img src="/icons/icon-wrap1-white.svg" />
+          </LogoContainer>
+        </h1>
       </AppHeader>
       <AppSidebar>
+        <SidebarLogo></SidebarLogo>
+        <SidebarTitle>
+          <h2 className="h5">Apps</h2>
+        </SidebarTitle>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <img src="/icons/icon-mobiledevice-blueblack.svg" />
+            <a href="#">Apps</a>
+          </SidebarMenuItem>
+        </SidebarMenu>
       </AppSidebar>
       <AppContent>
         <SectionHeader>
-          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>Action 1</Button>
-          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>Action 2</Button>
-          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>Action 3</Button>
+          <Breadcrumb>
+            <h3 className="h4">Apps</h3>
+          </Breadcrumb>
+          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>
+            <HeaderIconContainer><img src="/icons/icon-file-upload-white.svg" /></HeaderIconContainer>
+            Upload
+          </Button>
+          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>
+            <HeaderIconContainer><img src="/icons/icon-wrap1-white.svg" /></HeaderIconContainer>
+            Action
+          </Button>
+          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>
+            <HeaderIconContainer><img src="/icons/icon-wrap1-white.svg" /></HeaderIconContainer>
+            Action
+          </Button>
+          <Button className="ml-3" color="primary" size="lg" onClick={() => { }}>
+            <HeaderIconContainer><img src="/icons/icon-file-download-white.svg" /></HeaderIconContainer>
+            Download
+          </Button>
         </SectionHeader>
         <div className="container-fluid">
           <div className="row">
@@ -111,7 +196,6 @@ const App = () => (
             <Link to="/topics">Topics</Link>
           </li>
         </ul>
-        <hr />
         <Route exact path="/" component={Home} />
         <Route path="/topics" component={Topics} />
       </AppContent>
