@@ -54,24 +54,27 @@ const AppSidebar = styled.div`
 `
 
 const SidebarLogo = styled.div`
-  background: #f1f1f1;
+  border: 1px solid #f1f1f1;
   height: 110px;
   width: 85%;
   margin: auto;
+  background: white;
 `
 const SidebarTitle = styled.div`
   text-align: left;
   text-indent: 20px;
-  margin: 20px 0 90px 0;
+  margin: 25px 0 70px 0;
 `
 const SidebarMenu = styled.div`
   text-align: left;
   margin: 0 0 0 15px;
 `
 const SidebarMenuItem = styled.div`
+  margin-bottom: 20px;
   img {
     margin: 0 15px;
     height: 25px;
+    width: 25px;
   }
   a { 
     color: black;
@@ -103,15 +106,42 @@ const Breadcrumb = styled.div`
   float: left;
 `
 
+const AppHeaderMenuContainer = styled.div`
+  float: right;
+  color: white;
+`
+
+const AppHeaderMenuItem = styled.div`
+  display: inline;
+  text-align: right;
+  margin-left: 40px;
+  img {
+    margin: 0 10px;
+    height: 25px;
+  }
+  a { 
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+`
+
 const App = () => (
   <Router>
     <AppWrapper>
       <AppHeader>
-        <h1 className="App-title">
-          <LogoContainer>
-            <img src="/icons/icon-wrap1-white.svg" />
-          </LogoContainer>
-        </h1>
+        <LogoContainer>
+          <img src="/icons/icon-wrap1-white.svg" />
+        </LogoContainer>
+        <AppHeaderMenuContainer>
+          <AppHeaderMenuItem>
+            <a href="#">Status</a>
+          </AppHeaderMenuItem>
+          <AppHeaderMenuItem>
+            <img src="/icons/icon-help-white.svg" />
+            <a href="#">Help</a>
+          </AppHeaderMenuItem>
+        </AppHeaderMenuContainer>
       </AppHeader>
       <AppSidebar>
         <SidebarLogo></SidebarLogo>
@@ -119,6 +149,10 @@ const App = () => (
           <h2 className="h5">Apps</h2>
         </SidebarTitle>
         <SidebarMenu>
+          <SidebarMenuItem>
+            <img src="/icons/icon-dial2-blueblack.svg" />
+            <a href="#">Dashboard</a>
+          </SidebarMenuItem>
           <SidebarMenuItem>
             <img src="/icons/icon-mobiledevice-blueblack.svg" />
             <a href="#">Apps</a>
@@ -152,20 +186,22 @@ const App = () => (
             <div className="col">
               <Card>
                 <CardPrimaryContent>
-                  <p>Content</p>
+                  <p style={{ height: 100 }}></p>
                 </CardPrimaryContent>
                 <CardActions>
-                  <CardActionButtons>
-                    <Button size="md" color="primary" onClick={() => { }}>Action 1</Button>
-                    <Button size="md" color="primary" onClick={() => { }}>Action 2</Button>
-                    <Button size="md" color="primary" onClick={() => { }}>Action 2</Button>
+                  <CardActionButtons style={{ margin: 'auto' }}>
+                    <Button size="md" color="primary" onClick={() => { }}>Action</Button>
+                    <Button size="md" color="primary" onClick={() => { }}>Action</Button>
+                    <Button size="md" color="primary" onClick={() => { }}>Action</Button>
                   </CardActionButtons>
-                  <CardActionIcons></CardActionIcons>
                 </CardActions>
+                <CardPrimaryContent style={{ background: '#F8F9FA', height: 100, borderTop: '1px solid #CDD0D3' }}>
+                  <p style={{ height: 100 }}></p>
+                </CardPrimaryContent>
               </Card>
             </div>
             <div className="col">
-              <Card>
+              {/* <Card>
                 <CardPrimaryContent>
                   <h1>Header</h1>
                   <MdcButton>
@@ -180,7 +216,7 @@ const App = () => (
                     <i>Click Me Too!</i>
                   </CardActionIcons>
                 </CardActions>
-              </Card>
+              </Card> */}
             </div>
             <div className="col">
             </div>
@@ -188,7 +224,7 @@ const App = () => (
             </div>
           </div>
         </div>
-        <ul>
+        {/* <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -197,49 +233,49 @@ const App = () => (
           </li>
         </ul>
         <Route exact path="/" component={Home} />
-        <Route path="/topics" component={Topics} />
+        <Route path="/topics" component={Topics} /> */}
       </AppContent>
     </AppWrapper>
   </Router>
 );
 
-const Home = inject(['store'])(
-  observer(({ store }) => (
-    <div>
-      <h2>Home</h2>
-      <p>{store.text}</p>
-    </div>
-  ))
-);
+// const Home = inject(['store'])(
+//   observer(({ store }) => (
+//     <div>
+//       <h2>Home</h2>
+//       <p>{store.text}</p>
+//     </div>
+//   ))
+// );
 
-const Topics = ({ match }) => (
-  <div>
-    <h2>Topics</h2>
-    <ul>
-      <li>
-        <Link to={`${match.url}/rendering`}>Rendering with React</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/components`}>Components</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-      </li>
-    </ul>
+// const Topics = ({ match }) => (
+//   <div>
+//     <h2>Topics</h2>
+//     <ul>
+//       <li>
+//         <Link to={`${match.url}/rendering`}>Rendering with React</Link>
+//       </li>
+//       <li>
+//         <Link to={`${match.url}/components`}>Components</Link>
+//       </li>
+//       <li>
+//         <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
+//       </li>
+//     </ul>
 
-    <Route path={`${match.url}/:topicId`} component={Topic} />
-    <Route
-      exact
-      path={match.url}
-      render={() => <h3>Please select a topic.</h3>}
-    />
-  </div>
-);
+//     <Route path={`${match.url}/:topicId`} component={Topic} />
+//     <Route
+//       exact
+//       path={match.url}
+//       render={() => <h3>Please select a topic.</h3>}
+//     />
+//   </div>
+// );
 
-const Topic = ({ match }) => (
-  <div>
-    <h3>{match.params.topicId}</h3>
-  </div>
-);
+// const Topic = ({ match }) => (
+//   <div>
+//     <h3>{match.params.topicId}</h3>
+//   </div>
+// );
 
 export default App;

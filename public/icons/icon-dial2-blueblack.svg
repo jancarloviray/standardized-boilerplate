@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="34px" viewBox="0 0 42 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-Dial2-blueblack</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M41.099733,40.4891872 L39.4673785,39.333584 C41.7524653,36.10577 43,32.2427688 43,28.1875 C43,17.5884583 34.4913106,9 24,9 C13.5086894,9 5,17.5884583 5,28.1875 C5,32.2318047 6.24077169,36.0849699 8.51439264,39.3077899 L6.88014382,40.4607126 C4.37025378,36.9029851 3,32.6477187 3,28.1875 C3,16.4880449 12.3999207,7 24,7 C35.6000793,7 45,16.4880449 45,28.1875 C45,32.65982 43.6222763,36.9259526 41.099733,40.4891872 Z M33.5864662,24.6850265 L25.9548872,35.5475017 C25.9419188,36.3114847 25.6454496,37.0644106 25.0714286,37.647386 C23.8968842,38.8402771 21.9978226,38.8402771 20.8233083,37.647386 C19.6488,36.4545559 19.6487639,34.5258439 20.8233083,33.3330139 C21.3973293,32.7499774 22.1386887,32.4491736 22.8909774,32.4357339 L33.5864662,24.6850265 Z" id="path-1"></path>
+    </defs>
+    <g id="Design-System" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-327.000000, -1488.000000)">
+            <g id="Group-5" transform="translate(80.000000, 1055.000000)">
+                <g id="Row" transform="translate(1.000000, 426.000000)">
+                    <g id="Icon-/-Dial-2" transform="translate(243.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#000015" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Style-/-Color-/-Blue-Black" mask="url(#mask-2)" fill="#000015" fill-rule="evenodd">
+                            <rect id="Container" x="0" y="0" width="48" height="48"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
