@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { inject, observer } from 'mobx-react';
 import styled from 'styled-components'
 import { Alert, Button } from 'reactstrap';
+import { Button as MdcButton } from '@material/react-button';
+import MaterialIcon from '@material/react-material-icon';
 import Card, { CardPrimaryContent, CardActions, CardActionButtons, CardActionIcons } from '@material/react-card';
 import './App.css';
 
@@ -69,15 +71,31 @@ const App = () => (
                 </CardPrimaryContent>
                 <CardActions>
                   <CardActionButtons>
-                    <Button color="primary" onClick={() => { }}>Action 1</Button>
-                    <Button color="primary" onClick={() => { }}>Action 2</Button>
-                    <Button color="primary" onClick={() => { }}>Action 2</Button>
+                    <Button size="md" color="primary" onClick={() => { }}>Action 1</Button>
+                    <Button size="md" color="primary" onClick={() => { }}>Action 2</Button>
+                    <Button size="md" color="primary" onClick={() => { }}>Action 2</Button>
                   </CardActionButtons>
                   <CardActionIcons></CardActionIcons>
                 </CardActions>
               </Card>
             </div>
             <div className="col">
+              <Card>
+                <CardPrimaryContent>
+                  <h1>Header</h1>
+                  <MdcButton>
+                    <MaterialIcon icon="more_vert" />
+                  </MdcButton>
+                </CardPrimaryContent>
+                <CardActions>
+                  <CardActionButtons>
+                    <Button size="lg" color="primary" onClick={() => { }}>Action 1</Button>
+                  </CardActionButtons>
+                  <CardActionIcons>
+                    <i>Click Me Too!</i>
+                  </CardActionIcons>
+                </CardActions>
+              </Card>
             </div>
             <div className="col">
             </div>
